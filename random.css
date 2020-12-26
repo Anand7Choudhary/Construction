@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+
+/*header*/
+
+
+header{
+    background-color:black;
+    color:white;
+    display:flex;
+    position:sticky;
+}
+header h5{
+    padding:8px;
+    vertical-align: middle;
+}
+#nameofcompany{
+    letter-spacing: 10px;
+    float:left;
+    margin-left:5%;
+    font-weight:bolder;
+    font-size:20px;
+}
+#number{
+    margin-left:35%;
+    letter-spacing: 2px;
+    font-weight:bolder;
+    font-size:20px;
+}
+
+
+/*End of header*/
+
+/*Nav menu*/
+
+
+nav ul{
+    list-style-type: none;
+    display:flex;
+}
+nav ul li a{
+    text-decoration: none;
+    float:left;
+    text-decoration-style: none;
+    color:rgb(121, 121, 121);
+    font-size:22px;
+    top:0;
+    margin:6vh 2vw;
+    font-family:arvo;
+    transition:transform 0.3s ease-in-out;
+    -moz-transition:transform 0.3s ease-in-out;
+    -webkit-transition:transform 0.3s ease-in-out;
+    -o-transition:transform 0.3s ease-in-out;
+}
+#proj{
+    margin:6vh 2vw;
+}
+#about{
+    margin:6vh 2vw;
+}
+nav ul li a:hover{
+    color:black;
+    border-bottom:2px solid rgb(0, 0, 0);
+    transform: scale(1.2);
+    -moz-transform:scale(1.2) ;
+    -webkit-transform:scale(1.2) ;
+    -o-transform:scale(1.2) ;
+}
+.logo img{
+    width:10vw;
+    height:22vh;
+    margin:0vh 2vw;
+    float:left;
+    transition:transform 0.3s  ease-in-out;
+    -moz-transition:transform 0.3s  ease-in-out;
+    -webkit-transition:transform 0.3s  ease-in-out;
+    -o-transition:transform 0.3s  ease-in-out;
+}
+
+nav ul li a #proj:hover
+    .project_dropdown{
+        display: inline-block;
+    }
+nav ul li a #about:hover
+    .aboutus_dropdown{
+        display: inline-block;
+    }
+.project{
+    display:inline-block;
+    position: relative;
+}
+.aboutus{
+    display:inline-block;
+    position: relative;
+}
+.project_dropdown{
+    display: none;
+    position: absolute;
+    margin-top:1vh;
+    background-color: #ffffff;
+    width:10vw;
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.2);
+    z-index: 333;
+    font-size:22px;
+    font-weight:bold;
+    text-align: center;
+    margin:15vh 2vw 0vh 1vw;
+}
+.aboutus_dropdown{
+    display: none;
+    position: absolute;
+    margin-top:1vh;
+    background-color: #ffffff;
+    width:10vw;
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.2);
+    z-index: 333;
+    font-size:22px;
+    font-weight:bold;
+    text-align: center;
+    margin:15vh 2vw 0vh 1vw;
+}
+.project_dropdown a{
+    color:rgb(92, 92, 92);
+    padding: 12px 10px;
+    text-decoration: none;
+    display:block;
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+.aboutus_dropdown a{
+    color:rgb(92, 92, 92);
+    padding: 12px 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom:2px solid rgb(0, 0, 0);
+}
+.project_dropdown a:hover{
+    color:black;
+}
+.aboutus_dropdown a:hover{
+    color:black;
+}
+.project:hover
+    .project_dropdown{display:block;}
+.aboutus:hover
+    .aboutus_dropdown{display:block;}
+
+
+/*End of nav menu*/
+
+/*moving project area*/
+.moving_projects{
+    width:100%;
+    margin-top:2vh;
+    position: relative;
+    height:80vh;
+}
+.moving_projects img{
+    width:100%;
+    height:100%;
+}
+.slideshow{
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    z-index:222;
+  }
+  .slideshow img {
+      vertical-align: middle;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width:50vw;
+    height:70vh;
+  }
+  .myslide1{
+    margin-top:-75vh;
+    margin-left:24vw;
+  }
+  .myslide2{
+    margin-top:-75vh;
+    margin-left:24vw;
+  }
+  .myslide3{
+    margin-top:-75vh;
+    margin-left:24vw;
+  }
+  .myslide4{
+    margin-top:-75vh;
+    margin-left:24vw;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #ffffff;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    font-weight:bold;
+  }
+  .fade {
+    animation:fadein ease-in-out 1.5s;
+    -moz-animation:fadein ease-in-out 1.5s ;
+    -o-animation:fadein ease-in-out 1.5s ;
+    -webkit-animation:fadein ease-in-out 1.5s ;
+  }
+  @keyframes fadein{
+      0%{opacity: 0.2;}
+      100%{opacity: 1;}
+  }
+  @-webkit-keyframes fadein{
+    from {opacity: 0.2}
+    to {opacity: 1}
+  }
+  @-o-keyframes fadein{
+    from {opacity: 0.2}
+    to {opacity: 1}
+  }
+  @-moz-document fadein{
+    from {opacity: 0.2}
+    to {opacity: 1}
+  }
+
+
+
+
+
+
+.directors{
+    margin-top:10vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1300px){
+    header h5{
+        padding:2px;
+    }
+    #nameofcompany{
+        letter-spacing: 5px;
+        float:left;
+        margin-left:3vw;
+        font-weight:bolder;
+        font-size:14px;
+    }
+    #number{
+        margin-left:30vw;
+        letter-spacing: 2px;
+        font-weight:bolder;
+        font-size:15px;
+    }
+    .logo img{
+        width:15%;
+        height:20vh;
+        position:relative;
+        margin:3vh 0vw 0vh 1vw;
+    }
+    nav ul li a{
+        font-size:23px;
+        margin:18vh 3vw 0vh 3vw;
+    }
+    .project_dropdown{
+        margin-top:15vh;
+        width:15vw;
+        margin-left:0.5vw;
+    }
+    .aboutus_dropdown{
+        margin-top:15vh;
+        width:15vw;
+        margin-left:1vw;
+    }
+    #proj,#about{
+        margin-top:8vh;
+        margin-bottom:0vh;
+    }
+    nav ul li a{
+        margin-top:8vh;
+    }
+    .moving_projects{
+        margin-top:5vh;
+        position: relative;
+        width:100%;
+        height:75vh;
+    }
+    .moving_projects img{
+        height:100%;
+    }
+    .directors{
+        position: relative;
+        margin-top:10vh;
+    }
+}
+
+
+@media screen and (max-width:801px){
+    header h5{
+        padding:2px;
+    }
+    #nameofcompany{
+        letter-spacing: 3px;
+        float:left;
+        margin-left:1vw;
+        font-weight:bolder;
+        font-size:15px;
+    }
+    #number{
+        margin-left:5vw;
+        letter-spacing: 2px;
+        font-weight:bolder;
+        font-size:13px;
+    }
+    .logo img{
+        width:30%;
+        height:20%;
+        position:static;
+        margin:3vh 35vw 0vh 35vw;
+        display: block;
+    }
+    .logo img:hover{
+        transform: scale(1.3);
+        -moz-transform:scale(1.2) ;
+        -webkit-transform:scale(1.2) ;
+        -o-transform:scale(1.2) ;
+    }
+    nav ul{
+        display:flex;
+        justify-content: center;
+    }
+    nav ul li a{
+        font-size:20px;
+        margin:4vh 3vw 0vh 3vw;
+        display:block;
+    }
+    .project_dropdown{
+        margin-top:50%;
+        width:120%;
+        margin-left:-2vw;
+    }
+    .aboutus_dropdown{
+        margin-top:43%;
+        width:120%;
+        margin-left:-2vw;
+    }
+    #proj,#about{
+        margin-top:3vh;
+        margin-bottom:3vh;
+    }
+    nav ul li a{
+        margin-top:3vh;
+    }
+
+    .moving_projects{
+        margin-top:3.5vh;
+        position: absolute;
+        left:0;
+        width:100%;
+        height:50vh;
+    }
+    .moving_projects img{
+        height:100%;
+    }
+    .directors{
+        margin-top:60vh;
+        position: absolute;
+    }
+}
+
+
+@media screen and (max-width:450px){
+    header h5{
+        padding:2px;
+    }
+    #nameofcompany{
+        letter-spacing: 3px;
+        float:left;
+        margin-left:1vw;
+        font-weight:bolder;
+        font-size:15px;
+    }
+    #number{
+        margin-left:25vw;
+        letter-spacing: 2px;
+        font-weight:bolder;
+        font-size:15px;
+    }
+    .logo img{
+        width:30%;
+        height:20%;
+        position:static;
+        margin:3vh 35vw 0vh 35vw;
+    }
+    .logo img:hover{
+        transform: scale(1.2);
+        -moz-transform:scale(1.2) ;
+        -webkit-transform:scale(1.2) ;
+        -o-transform:scale(1.2) ;
+    }
+    nav ul{
+        display:flex;
+        justify-content: center;
+        margin-left:-10vw;
+    }
+    nav ul li a{
+        font-size:20px;
+        margin:4vh 1vw 0vh 0vw;
+        display:block;
+        color:rgb(90, 90, 90);
+    }
+    .project_dropdown{
+        margin-top:70%;
+        width:125%;
+        margin-left:-2vw;
+    }
+    .aboutus_dropdown{
+        margin-top:55%;
+        width:120%;
+        margin-left:-2vw;
+    }
+    #proj,#about{
+        margin-top:3vh;
+        margin-bottom:0vh;
+    }
+    nav ul li a{
+        margin-top:3vh;
+    }
+    .moving_projects{
+        margin-top:3.5vh;
+        position: relative;
+        width:100%;
+        height:45vh;
+    }
+    .moving_projects img{
+        height:100%;
+    }
+    .directors{
+        position: relative;
+        margin-top:10vh;
+    }
+}
